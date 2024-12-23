@@ -45,6 +45,7 @@ function match_choice(user_choice, computer_choice) {
     Score.lose += 1;
   }
   document.querySelector(".result").innerText = `${result}`;
+  document.querySelector(".both_result").style.display = "flex";
   document.querySelector(".user_choice").src = `images/${user_choice}.png`;
   document.querySelector(
     ".computer_choice"

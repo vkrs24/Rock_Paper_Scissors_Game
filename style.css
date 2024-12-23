@@ -62,7 +62,7 @@ body {
 }
 
 .both_result {
-  display: flex;
+  display: none;
   width: 80%;
   justify-content: space-between;
   align-items: center;
