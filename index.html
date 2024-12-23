@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock-Paper-Scissors</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>Rock-Paper-Scissors</h1>
+        </div>
+        <div class="image_container">
+            <div class="image_box" onclick="game_logic('rock')" aria-label="Choose Rock">
+                <img src="images/rock.png" alt="Rock Icon" class="d_img" />
+            </div>
+            <div class="image_box" onclick="game_logic('paper')" aria-label="Choose Paper">
+                <img src="images/paper.png" alt="Paper Icon" class="d_img" />
+            </div>
+            <div class="image_box" onclick="game_logic('scissors')" aria-label="Choose Scissors">
+                <img src="images/scissors.png" alt="Scissors Icon" class="d_img" />
+            </div>
+        </div>
+        <div class="result_section">
+            <div class="div_text result">The game has not started yet</div>
+            <div class="both_result">
+                <div class="div_text">
+                    You
+                </div>
+                <div class="r_img">
+                    <img src="images/placeholder.png" alt="Your choice" class="user_choice">
+                </div>
+                <div class="div_text">
+                    Computer
+                </div>
+                <div class="r_img">
+                    <img src="images/placeholder.png" alt="Computer choice" class="computer_choice">
+                </div>
+            </div>
+            <div class="Score div_text">Wins: 0 Loses: 0 Ties: 0</div>
+            <button class="reset_btn" onclick="game_logic('reset')">RESET</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>
